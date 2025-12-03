@@ -24,6 +24,20 @@ int main() {
 		return 1;
 	}
 
-	cout << czy_bezkwadratowa(i) << endl;
+	if (i <= 0) {
+		cout << "Liczba musi byc dodatnia!" << endl;
+		return 1;
+	}
+
+	cout << i << " ";
+
+	if (czy_bezkwadratowa(i)) {
+		cout << "jest bezkwadratowa";
+	} else {
+		cout << "nie jest bezkwadratowa";
+	}
+
+	cout << endl;
+
 	return 0;
 }
