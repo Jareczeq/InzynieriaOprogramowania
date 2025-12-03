@@ -9,6 +9,11 @@ int main() {
 		return 1;
 	}
 
+	if (i <= 0) {
+		cout << "Liczba musi byc dodatnia!" << endl;
+		return 1;
+	}
+
 	cout << i << endl;
 	return 0;
 }
